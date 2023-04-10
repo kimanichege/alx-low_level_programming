@@ -20,10 +20,12 @@ int _atoi(char *s)
 
 	while (s[len] != '\0')
 		len++;
+
 	while (i < len && f == 0)
 	{
-		if (s[i] == '_')
+		if (s[i] == '-')
 			++d;
+
 		if (s[i] >= '0' && s[i] <= '9')
 		{
 			digit = s[i] - '0';
@@ -49,7 +51,7 @@ int _atoi(char *s)
  * @argc: number of arguments
  * @argv: array of arguments
  *
- * Return: 0 (success), 1 (error)
+ * Return: 0 (success), 1 (Error)
  */
 int main(int argc, char *argv[])
 {
@@ -57,7 +59,7 @@ int main(int argc, char *argv[])
 
 	if (argc < 3 || argc > 3)
 	{
-		printf("error\n");
+		printf("Error\n");
 		return (1);
 	}
 
