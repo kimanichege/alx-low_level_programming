@@ -1,9 +1,9 @@
 #include "lists.h"
 
 /**
- * add_nodeint_end - adds a new node containing a given integer value to the end of a singly linked list.
+ * add_nodeint_end - adds a new node at the end.
  * @head: a pointer to a pointer to the head of the linked list.
- * @n: n an integer value to be stored in the new node.
+ * @n: an integer value to be stored in the new node.
  *
  * Return: address of the new element. NUll if it failed.
  */
